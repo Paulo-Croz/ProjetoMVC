@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using ProjetoMVC.Data;
+using ProjetoMVC.Services;
 
 namespace ProjetoMVC
 {
@@ -30,7 +31,9 @@ namespace ProjetoMVC
             services.AddDbContext<ProjetoMVCContext>(options =>
                     options.UseMySql(Configuration.GetConnectionString("ProjetoMVCContext"), builder => 
                         builder.MigrationsAssembly("ProjetoMVC")));
+
             services.AddScoped<SeedingService>();
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
