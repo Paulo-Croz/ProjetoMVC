@@ -10,7 +10,7 @@ namespace ProjetoMVC.Models
         public string Name { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
-        public Department() 
+        public Department()
         {
         }
 
@@ -20,7 +20,7 @@ namespace ProjetoMVC.Models
             Name = name;
         }
 
-        public void AddSellers(Seller seller)
+        public void AddSeller(Seller seller)
         {
             Sellers.Add(seller);
         }

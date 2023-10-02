@@ -1,7 +1,6 @@
 ﻿using ProjetoMVC.Data;
 using ProjetoMVC.Models;
 using System.Collections.Generic;
-using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using ProjetoMVC.Services.Exceptions;
 using System.Threading.Tasks;

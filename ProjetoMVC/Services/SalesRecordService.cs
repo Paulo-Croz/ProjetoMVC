@@ -1,10 +1,10 @@
 ﻿using ProjetoMVC.Data;
 using ProjetoMVC.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace ProjetoMVC.Services
 {
